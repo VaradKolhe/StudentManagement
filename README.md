@@ -4,11 +4,10 @@ A full-stack Java web application built with **Spring Framework** that performs 
 
 ## Technologies Used
 - Java 8
-- Spring Framework (Core, Web MVC)
+- Spring Framework
 - MySQL (via XAMPP)
-- JDBC Template or JPA (as used)
-- Apache Tomcat (embedded or via Eclipse)
-- Eclipse IDE
+- JDBC Template
+- Apache Tomcat
 
 ## Features
 - Create new student records
@@ -20,11 +19,20 @@ A full-stack Java web application built with **Spring Framework** that performs 
 
 ## How to Run
 1. Start **Apache** and **MySQL** from **XAMPP Control Panel**
-2. Create a MySQL DB:
+2.1. Create school MySQL DB:
     ```sql
-    CREATE DATABASE studentdb;
+    CREATE DATABASE school;
     ```
-3. Import the provided `student.sql` if available.
+2.2. Create student table in school DB
+    ```sql
+    CREATE TABLE student (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    course VARCHAR(100),
+    fee DECIMAL(10, 2),
+    studentname VARCHAR(100)
+    );
+    ```
 4. Open the project in **Eclipse** as a Maven project (if using Maven).
-5. Configure database credentials in `application.properties` or XML file.
-6. Deploy the app on **Tomcat** or run via Eclipse server.
+5. Run the file src/main/java/com/example/emp/StudentCrudApplication.java as a java project.
+
+Use this project as a localhost

@@ -19,6 +19,7 @@ A full-stack Java web application built with **Spring Framework** that performs 
 
 ## How to Run
 1. Start **Apache** and **MySQL** from **XAMPP Control Panel**
+
 2.1. Create school MySQL DB:
 ```sql
     CREATE DATABASE school;

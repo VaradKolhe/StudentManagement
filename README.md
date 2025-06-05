@@ -29,7 +29,7 @@ A full-stack Java web application built with **Spring Framework** that performs 
     CREATE TABLE student (
     id INT PRIMARY KEY AUTO_INCREMENT,
     course VARCHAR(100),
-    fee DECIMAL(10, 2),
+    fee INT,
     studentname VARCHAR(100)
     );
 ```
